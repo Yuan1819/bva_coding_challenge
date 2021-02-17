@@ -3,3 +3,85 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hero {
+  position: relative;
+  height: 475px;
+  display: table;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.hero__inner {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 55px 0;
+  z-index: 2;
+  color: #fff;
+}
+.page-width {
+  padding-left: 55px;
+  padding-right: 55px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.hero__content.left{
+  width: 50%;
+  text-align: left;
+  float: left;
+}
+.hero__content.center{
+  text-align: center;
+}
+.hero__content.right{
+  width: 50%;
+  float: right;
+  text-align: left;
+}
+.hero--challenge .mega-title{
+  font-family: RobotoBold;
+  font-weight: bold;
+  font-size: 46px;
+}
+.hero--challenge .mega-subtitle{
+  font-family: RobotoLight;
+  font-weight: 300;
+  font-size: 24px;
+  margin-bottom: 27.5px;
+}
+.hero--challenge .hero__btn{
+  font-family: RobotoLight;
+  font-weight: 300;
+  font-size: 20px;
+  background-color: #57ad68;
+  border-radius: 30px;
+  padding: 10px 18px;
+}
+.hero--challenge .hero__btn:hover{
+  color: #57ad68;
+  background-color: #fff;
+}
+
+.mobile-only{
+  display: none;
+}
+@media only screen and (max-width: 749px) {
+  .mobile-only{
+    display: block;
+  }
+  .desktop-only{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .hero--challenge .mega-title{
+    font-size: 36px;
+  }
+  .hero--challenge .mega-subtitle{
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,17 @@
+/** Custom Font **/
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('Roboto-Light.woff2') format('woff2'),
+      url('Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('Roboto-Bold.woff2') format('woff2'),
+      url('Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}

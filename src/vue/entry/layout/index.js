@@ -48,3 +48,14 @@ Object.entries(customElements).forEach(component => {
   Vue.customElement(name, module);
   Vue.config.ignoredElements = [name];
 });
+
+var theme = {
+  vue: {
+    availableApps: []
+  },
+  breakpoints: {
+    medium: 750,
+    large: 990,
+    widescreen: 1400
+  }
+}

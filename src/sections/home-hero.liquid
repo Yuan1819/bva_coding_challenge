@@ -1,11 +1,8 @@
 {{'home.css' | asset_url | stylesheet_tag }}
 <script src="{{ 'home.js' | asset_url }}" defer></script>
 
-<div class="my-12">
-  <div class="container">
-    <hero-element settings={{ section.settings | json }}></hero-element>
-    <theme-add-to-cart></theme-add-to-cart>
-  </div>
+<div class="page-container">
+  <hero-element settings='{{ section.settings | json }}'></hero-element>
 </div>
 
 {% schema %}

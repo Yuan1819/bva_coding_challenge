@@ -1,24 +1,27 @@
 <div class="bg-white shadow py-4">
-    <div class="container">
-        <div class="flex items-center justify-between">
+  <div class="container">
+    <div class="flex items-center justify-between">
 
-            <div class="flex items-center space-x-8">
-                {% comment %}
+      <div class="flex items-center space-x-8">
+        {% comment %}
                     Logo
                 {% endcomment %}
-                <a href="/" class="text-2xl py-4">Shopify Vuejs</a>
+        <a class="text-2xl py-4" href="/">Shopify Vuejs</a>
 
-                {% comment %}
+        {% comment %}
                     Menu
                 {% endcomment %}
-                <ul class="flex items-center space-x-8 border-l border-gray-400 pl-8">
-                    <li><a href="/collections/all" class="text-color-link hover:text-color-link-hover transition duration-200">Products</a></li>
-                </ul>
-            </div>
+        <ul class="flex items-center space-x-8 border-l border-gray-400 pl-8">
+          <li>
+            <a class="text-color-link hover:text-color-link-hover transition duration-200" href="/collections/all">Products</a>
+          </li>
+        </ul>
+      </div>
 
-            {% comment %}
+      {% comment %}
                 Icons
             {% endcomment %}
+      {% comment %}
             <ul class="flex items-center space-x-8">
                 <li class="">
                     <a href="/account/login" class="flex items-center space-x-3 text-color-link hover:text-color-link-hover transition duration-200">
@@ -34,6 +37,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+            {% endcomment %}
     </div>
+  </div>
 </div>
