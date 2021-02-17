@@ -1,0 +1,86 @@
+{{'home.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'home.js' | asset_url }}" defer></script>
+
+<div class="my-12">
+  <div class="container">
+    <hero-element settings={{ section.settings | json }}></hero-element>
+    <theme-add-to-cart></theme-add-to-cart>
+  </div>
+</div>
+
+{% schema %}
+
+{
+  "name": "Home Hero",
+  "tag": "section",
+  "class": "section home-hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Configuration"
+    }, {
+      "type": "image_picker",
+      "id": "destkop_img",
+      "label": "Hero Desktop Image",
+      "info": "We recommend to use at least 1920px x 1080px for the desktop banner image"
+    }, {
+      "type": "image_picker",
+      "id": "mobile_img",
+      "label": "Hero Mobile Image",
+      "info": "We recommend to use at least 700px x 640px for the mobile banner image"
+    }, {
+      "type": "color",
+      "id": "text_color",
+      "label": "Section Text Color",
+      "default": "#ffffff"
+    }, {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        }, {
+          "value": "center",
+          "label": "center"
+        }, {
+          "value": "right",
+          "label": "right"
+        }
+      ],
+      "default": "center"
+    }, {
+      "type": "header",
+      "content": "Content"
+    }, {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Hero Title"
+    }, {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Hero description"
+    }, {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Title",
+      "default": "Read more"
+    }, {
+      "type": "url",
+      "id": "cta_url",
+      "label": "CTA Url",
+      "default": "/"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero",
+      "category": "Custom"
+    }
+  ]
+}
+
+{% endschema %}
