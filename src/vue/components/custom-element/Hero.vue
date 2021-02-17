@@ -14,7 +14,7 @@
         </div>
       </div>
     </div>
-    <div class="hero hero--challenge mobile-only" :style="{ backgroundImage: `url(${desktop_img})` }">
+    <div class="hero hero--challenge mobile-only" :style="{ backgroundImage: `url(${mobile_img})` }">
       <div class="hero__inner">
         <div v-if="title.length > 0 || description.length > 0" class="page-width hero__content center">
           <h2 class="h1 mega-title" :style="{ color: color}">{{ title }}</h2>
